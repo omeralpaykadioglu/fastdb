@@ -11,8 +11,7 @@ try {
 }
 catch(PDOException $e)
 {
-	echo "Bağlantı sırasında hata oluştu,lütfen daha sonra tekrar deneyiniz.";
-	die();
+	die("Bağlantı sırasında hata oluştu,lütfen daha sonra tekrar deneyiniz.");
 }
 
 function run($sql, $args = NULL)
